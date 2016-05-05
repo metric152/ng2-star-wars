@@ -2,8 +2,8 @@
     <div class="col-md-3"></div>
     <div class="col-md-6" [ngSwitch]="card.type">
         <sw-list *ngSwitchWhen="'list'" [resource]="card.item"></sw-list>
-        <!-- <person *ngSwitchWhen="people" [resource]="card.item"></person>
-        <planet *ngSwitchWhen="planets" [resource]="card.item"></planet>
+        <sw-person *ngSwitchWhen="'people'" [resource]="card.item"></sw-person>
+        <!-- <planet *ngSwitchWhen="planets" [resource]="card.item"></planet>
         <film *ngSwitchWhen="films" [resource]="card.item"></film>
         <species *ngSwitchWhen="species" [resource]="card.item"></species>
         <vehicle *ngSwitchWhen="vehicles" [resource]="card.item"></vehicle>

@@ -20,6 +20,6 @@ export class SwTagsComponent implements OnInit {
     }
 
     public displayItem(tag){
-        this.swCardsService.addItem(tag, tag.type);
+        this.swCardsService.addItem(tag, this.type);
     }
 }
