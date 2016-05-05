@@ -6,6 +6,8 @@
   <base href="/">
   {{content-for 'head'}}
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Service worker support is disabled by default.
@@ -21,7 +23,7 @@
   -->
 </head>
 <body>
-  <ng2-star-wars-app>Loading...</ng2-star-wars-app>
+  <sw-container>Loading...</sw-container>
 
   <script src="vendor/es6-shim/es6-shim.js"></script>
   <script src="vendor/reflect-metadata/Reflect.js"></script>
