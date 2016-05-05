@@ -1,7 +1,6 @@
 <div class="card">
     <div class="card-block">
         <h4 class="card-title"><span class="title">{{resource.type}}</span> from Star Wars</h4>
-        {{resource.tags}}
-        <!-- <tags type="listCtrl.resource.type" tags="resource.results"></tags> -->
+        <sw-tags [type]="resource.type" [tags]="resource.results"></sw-tags>
     </div>
 </div>

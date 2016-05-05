@@ -34,6 +34,7 @@ const barrels: string[] = [
   'app/components/cards',
   'app/components/sw-cards',
   'app/components/sw-list',
+  'app/components/sw-tags',
   /** @cli-barrel */
 ];
 

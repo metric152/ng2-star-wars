@@ -1,7 +1,7 @@
 <div class="row" *ngFor="let card of cards()">
     <div class="col-md-3"></div>
     <div class="col-md-6" [ngSwitch]="card.type">
-        <app-sw-list *ngSwitchWhen="'list'" [resource]="card.item"></app-sw-list>
+        <sw-list *ngSwitchWhen="'list'" [resource]="card.item"></sw-list>
         <!-- <person *ngSwitchWhen="people" [resource]="card.item"></person>
         <planet *ngSwitchWhen="planets" [resource]="card.item"></planet>
         <film *ngSwitchWhen="films" [resource]="card.item"></film>
