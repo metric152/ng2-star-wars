@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {SwService} from '../../services/sw-service.service';
 import {SwCardsService} from '../../services/sw-cards.service';
+import {SwService} from '../../services/sw-service.service';
 
 @Component({
     moduleId: module.id,
     selector: 'app-sw-header',
     templateUrl: 'sw-header.component.html',
-    styleUrls: ['sw-header.component.css'],
-    providers:[SwService, SwCardsService]
+    styleUrls: ['sw-header.component.css']
 })
 export class SwHeaderComponent implements OnInit {
     public keys: string[];
@@ -27,9 +26,9 @@ export class SwHeaderComponent implements OnInit {
 
     // Listen for the click from the UI
     public getResource(key:string) {
-        console.log( this.resources[key] );
         this.swService.getResources([this.resources[key]]).subscribe(data => {
-            console.log( data );
+            // Store the type of list
+            data.type = key;
             this.swCardsService.resetList(data, 'list');
         });
     };}

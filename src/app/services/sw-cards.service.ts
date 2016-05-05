@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class SwCardsService {
 
-    private items:Object[] = [];
+    public items:Object[] = [];
     constructor() {}
 
     /**
