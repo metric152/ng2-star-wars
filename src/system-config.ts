@@ -36,6 +36,7 @@ const barrels: string[] = [
   'app/components/sw-list',
   'app/components/sw-tags',
   'app/components/sw-person',
+  'app/components/sw-planet',
   /** @cli-barrel */
 ];
 

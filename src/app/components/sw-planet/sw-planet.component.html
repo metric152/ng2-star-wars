@@ -1,0 +1,13 @@
+<div class="card card-block">
+    <div class="card-block">
+        <h4 class="card-title">{{resource.name}}</h4>
+    </div>
+    <img alt="Place holder text" src="http://placehold.it/500x200" class="card-img-top" />
+    <div class="card-block">
+        <p class="card-text">Climate: {{resource.climate}}</p>
+        <p class="card-text">Terrain: {{resource.terrain}}</p>
+        <p class="card-text">Population: {{resource.population | number: '1.1-2'}}</p>
+        <p class="card-text">Residents: <sw-tags [type]="'people'" [tags]="people"></sw-tags></p>
+        <p class="card-text">Films: <sw-tags [type]="'films'" [tags]="films"></sw-tags></p>
+    </div>
+</div>

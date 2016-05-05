@@ -3,11 +3,11 @@
     <div class="col-md-6" [ngSwitch]="card.type">
         <sw-list *ngSwitchWhen="'list'" [resource]="card.item"></sw-list>
         <sw-person *ngSwitchWhen="'people'" [resource]="card.item"></sw-person>
-        <!-- <planet *ngSwitchWhen="planets" [resource]="card.item"></planet>
-        <film *ngSwitchWhen="films" [resource]="card.item"></film>
-        <species *ngSwitchWhen="species" [resource]="card.item"></species>
-        <vehicle *ngSwitchWhen="vehicles" [resource]="card.item"></vehicle>
-        <starship *ngSwitchWhen="starships" [resource]="card.item"></starship> -->
+        <sw-planet *ngSwitchWhen="'planets'" [resource]="card.item"></sw-planet>
+        <!--<sw-film *ngSwitchWhen="'films'" [resource]="card.item"></sw-film>
+        <sw-species *ngSwitchWhen="'species'" [resource]="card.item"></sw-species>
+        <sw-vehicle *ngSwitchWhen="'vehicles'" [resource]="card.item"></sw-vehicle>
+        <sw-starship *ngSwitchWhen="'starships'" [resource]="card.item"></sw-starship> -->
     </div>
     <div class="col-md-3"></div>
 </div>
