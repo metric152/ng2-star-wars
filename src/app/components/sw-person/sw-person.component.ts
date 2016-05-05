@@ -23,6 +23,12 @@ export class SwPersonComponent extends AbstractSwBaseClass implements OnInit {
     ngOnInit() {
         // Populate planets
         this.getPlanets([this.resource.homeworld]);
+        // Populate films
+        this.getFilms(this.resource.films);
+        // Populate vehicles
+        this.getVehicles(this.resource.vehicles);
+        // Populate starships
+        this.getStarships(this.resource.starships);
     }
 
 }
