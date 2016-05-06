@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {SwCardsService} from '../../services/sw-cards.service';
-import {SwListComponent} from '../sw-list/index';
-import {SwPersonComponent} from '../sw-person/index';
-import {SwPlanetComponent} from '../sw-planet/index';
-import {SwFilmComponent} from '../sw-film/index';
-import {SwSpeciesComponent} from '../sw-species/index';
-import {SwVehicleComponent} from '../sw-vehicle/index';
+import {SwListComponent} from '../sw-list/';
+import {SwPersonComponent} from '../sw-person/';
+import {SwPlanetComponent} from '../sw-planet/';
+import {SwFilmComponent} from '../sw-film/';
+import {SwSpeciesComponent} from '../sw-species/';
+import {SwVehicleComponent} from '../sw-vehicle/';
+import {SwStarshipComponent} from '../sw-starship/';
 
 @Component({
     moduleId: module.id,
@@ -17,7 +18,8 @@ import {SwVehicleComponent} from '../sw-vehicle/index';
                  SwPlanetComponent,
                  SwFilmComponent,
                  SwSpeciesComponent,
-                 SwVehicleComponent]
+                 SwVehicleComponent,
+                 SwStarshipComponent]
 })
 export class SwCardsComponent implements OnInit {
     constructor(private swCardsService:SwCardsService) {}

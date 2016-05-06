@@ -1,0 +1,13 @@
+<div class="card card-block">
+    <div class="card-block">
+        <h4 class="card-title">{{resource.name}}</h4>
+    </div>
+    <img alt="Place holder text" src="http://placehold.it/500x200" class="card-img-top" />
+    <div class="card-block">
+        <p class="card-text">Model: {{resource.model}}</p>
+        <p class="card-text">Manufacturer: {{resource.manufacturer}}</p>
+        <p class="card-text">Starship class: {{resource.starship_class}}</p>
+        <p class="card-text">Films: <sw-tags [type]="'films'" [tags]="films"></sw-tags></p>
+        <p class="card-text">Pilots: <sw-tags [type]="'people'" [tags]="people"></sw-tags></p>
+    </div>
+</div>
