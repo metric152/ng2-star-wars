@@ -1,0 +1,12 @@
+<div class="card card-block">
+    <div class="card-block">
+        <h4 class="card-title">{{resource.name}}</h4>
+    </div>
+    <img alt="Place holder text" src="http://placehold.it/500x200" class="card-img-top" />
+    <div class="card-block">
+        <p class="card-text">Skin color: {{resource.skin_colors}}</p>
+        <p class="card-text">Homeworld: <sw-tags [type]="'planets'" [tags]="planets"></sw-tags></p>
+        <p class="card-text">Films: <sw-tags [type]="'films'" [tags]="films"></sw-tags></p>
+        <p class="card-text">People: <sw-tags [type]="'people'" [tags]="people"></sw-tags></p>
+    </div>
+</div>
