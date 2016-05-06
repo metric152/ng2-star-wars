@@ -39,6 +39,7 @@ const barrels: string[] = [
   'app/components/sw-planet',
   'app/components/sw-film',
   'app/components/sw-species',
+  'app/components/sw-vehicle',
   /** @cli-barrel */
 ];
 
