@@ -1,0 +1,12 @@
+<div class="card card-block">
+    <div class="card-block">
+        <h4 class="card-title">{{resource.title}}</h4>
+    </div>
+    <img alt="Place holder text" src="http://placehold.it/500x200" class="card-img-top" />
+    <div class="card-block">
+        <p class="card-text">Crawl: {{resource.opening_crawl}}</p>
+        <p class="card-text">Characters: <sw-tags [type]="'people'" [tags]="people"></sw-tags></p>
+        <p class="card-text">Planets: <sw-tags [type]="'planets'" [tags]="planets"></sw-tags></p>
+        <p class="card-text">Starships: <sw-tags [type]="'starships'" [tags]="starships"></sw-tags></p>
+    </div>
+</div>

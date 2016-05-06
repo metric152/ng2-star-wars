@@ -5,12 +5,13 @@ import {SwService} from '../../services/sw-service.service';
 
 @Component({
     moduleId: module.id,
-    selector: 'sw-planet',
-    templateUrl: 'sw-planet.component.html',
-    styleUrls: ['sw-planet.component.css'],
+    selector: 'sw-film',
+    templateUrl: 'sw-film.component.html',
+    styleUrls: ['sw-film.component.css'],
     directives: [SwTagsComponent]
 })
-export class SwPlanetComponent extends AbstractSwBaseClass implements OnInit {
+
+export class SwFilmComponent extends AbstractSwBaseClass implements OnInit {
     @Input()
     resource:any;
 
@@ -20,13 +21,12 @@ export class SwPlanetComponent extends AbstractSwBaseClass implements OnInit {
     }
 
     ngOnInit() {
-        /**
-         * Pipes changed. Must accept number
-         * https://auth0.com/blog/2015/09/03/angular2-series-working-with-pipes/
-         */
-        this.resource.population = +this.resource.population;
-        this.getPeople(this.resource.residents);
-        this.getFilms(this.resource.films);
+        // Get characters
+        this.getPeople(this.resource.characters);
+        // Populate planets
+        this.getPlanets(this.resource.planets);
+        // Populate starships
+        this.getStarships(this.resource.starships);
     }
 
 }
