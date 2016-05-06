@@ -26,7 +26,7 @@ export class SwCardsService {
      * @return {void}
      */
     public addItem(item, type){
-        this.items.unshift({
+        this.items.push({
             'item': item,
             'type': type
         })
