@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
+import { Card } from '../models/Card';
 
 @Injectable()
 export class SwCardsService {
 
-    public items:Object[] = [];
+    public items:Card[] = [];
     constructor() {}
 
     /**
@@ -13,10 +14,7 @@ export class SwCardsService {
      * @return {void}
      */
     public resetList(item, type){
-        this.items = [{
-            'item': item,
-            'type': type
-        }];
+        this.items = [new Card(type, item)];
     }
 
     /**
@@ -26,10 +24,7 @@ export class SwCardsService {
      * @return {void}
      */
     public addItem(item, type){
-        this.items.push({
-            'item': item,
-            'type': type
-        })
+        this.items.push(new Card(type, item));
     }
 
     /**

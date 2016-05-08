@@ -29,6 +29,7 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/models',
   'app/components/sw-container',
   'app/components/sw-header',
   'app/components/cards',
