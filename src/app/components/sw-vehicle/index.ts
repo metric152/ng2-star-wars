@@ -1,1 +1,1 @@
-export { SwVehicleComponent } from './sw-vehicle.component';
+export {SwVehicleComponent} from './sw-vehicle.component';

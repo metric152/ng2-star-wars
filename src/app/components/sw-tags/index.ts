@@ -1,1 +1,1 @@
-export { SwTagsComponent } from './sw-tags.component';
+export {SwTagsComponent} from './sw-tags.component';

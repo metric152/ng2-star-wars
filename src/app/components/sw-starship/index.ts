@@ -1,1 +1,1 @@
-export { SwStarshipComponent } from './sw-starship.component';
+export {SwStarshipComponent} from './sw-starship.component';

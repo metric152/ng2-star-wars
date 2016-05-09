@@ -1,1 +1,1 @@
-export { SwPlanetComponent } from './sw-planet.component';
+export {SwPlanetComponent} from './sw-planet.component';

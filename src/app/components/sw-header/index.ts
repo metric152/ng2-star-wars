@@ -1,1 +1,1 @@
-export { SwHeaderComponent } from './sw-header.component';
+export {SwHeaderComponent} from './sw-header.component';

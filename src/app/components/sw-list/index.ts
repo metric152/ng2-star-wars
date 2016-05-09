@@ -1,1 +1,1 @@
-export { SwListComponent } from './sw-list.component';
+export {SwListComponent} from './sw-list.component';

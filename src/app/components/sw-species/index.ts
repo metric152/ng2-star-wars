@@ -1,1 +1,1 @@
-export { SwSpeciesComponent } from './sw-species.component';
+export {SwSpeciesComponent} from './sw-species.component';

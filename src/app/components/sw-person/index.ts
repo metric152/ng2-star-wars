@@ -1,1 +1,1 @@
-export { SwPersonComponent } from './sw-person.component';
+export {SwPersonComponent} from './sw-person.component';

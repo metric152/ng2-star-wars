@@ -1,1 +1,1 @@
-export { SwFilmComponent } from './sw-film.component';
+export {SwFilmComponent} from './sw-film.component';

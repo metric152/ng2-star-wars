@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {SwCardsService} from '../../services/sw-cards.service';
 
 @Component({
@@ -9,17 +9,12 @@ import {SwCardsService} from '../../services/sw-cards.service';
 })
 
 export class SwTagsComponent implements OnInit {
-    @Input()
-    public tags:Object[];
-    @Input()
-    public type:string;
+  @Input() public tags: Object[];
+  @Input() public type: string;
 
-    constructor(private swCardsService: SwCardsService) {}
+  constructor(private swCardsService: SwCardsService) {}
 
-    ngOnInit() {
-    }
+  ngOnInit() {}
 
-    public displayItem(tag){
-        this.swCardsService.addItem(tag, this.type);
-    }
+  public displayItem(tag) { this.swCardsService.addItem(tag, this.type); }
 }

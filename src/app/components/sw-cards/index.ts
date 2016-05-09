@@ -1,1 +1,1 @@
-export { SwCardsComponent } from './sw-cards.component';
+export {SwCardsComponent} from './sw-cards.component';
